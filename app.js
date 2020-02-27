@@ -1,5 +1,6 @@
 const express = require('express'),
   es6Renderer = require('express-es6-template-engine'),
+  path = require('path'),
   app = express();
 
 app.engine('html', es6Renderer);
@@ -27,3 +28,4 @@ app.use('/page5', pageFiveController);
 app.use('/page6', pageSixController);
 app.use('/page7', pageSevenController);
 app.use('/page8', pageEightController);
+app.use('/', express.static(path.join(__dirname, '/')));
