@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
       title: 'The Sea Hare'
     },
     partials: {
-      partial: 'page1'
+      partial: 'page4'
     }
   });
 });
